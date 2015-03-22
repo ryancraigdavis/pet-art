@@ -5,8 +5,7 @@ var app = angular.module('petApp');
 		this.phoneChristophe = function(){
 			var deferred = $q.defer();
 			$http({
-				// method: 'GET', url: 'http://www.tripsimplicity.com/hotel:name?q='+url
-				method: 'GET', url: 'http://localhost:9000/phone'
+				method: 'GET', url: 'http://www.foreverpetart.com/phone'
 			}).success(function(data) {
 			    deferred.resolve(data);
 			}).error(function(err){

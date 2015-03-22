@@ -11,7 +11,7 @@ app.use(function(req,res,next) {
   next();
 })
 
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/phone', function(req, res){
   var myPhone = phoneData.getChrisPhone();
@@ -29,5 +29,4 @@ app.get('/phone', function(req, res){
 //     res.send(apiResponse);
 //   }); 
 
-app.listen(9000);
-// app.listen(80);
+app.listen(80);
