@@ -1,21 +1,27 @@
-// var app = angular.module('petApp',['ui.router']);
+var app = angular.module('petApp',['ui.router']);
 
-// app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-//     $urlRouterProvider.otherwise('/');
+// app.config(function($stateProvider, $urlRouterProvider) {
  
 //     $stateProvider
 //         .state('home', {
 //             url:'/',
-//             templateUrl: 'index.html',
+//             templateUrl: 'homeView.html',
 //             controller: 'mainCtrl'
 //         })
 //         .state('artists', {
-//             url:'/',
-//             templateUrl: 'artists.html',
-//             controller: 'artistsCtrl'
+//             url:'/artists',
+//             controller: 'artistsCtrl',
+//             templateUrl: 'artists.html'
 //         })
+//         .state('gallery', {
+//             url:'/gallery',
+//             templateUrl: 'gallery.html',
+//             controller: 'galleryCtrl'
+//         })
+//     	$urlRouterProvider.otherwise('/');
+
  
-// }]);
+// });
 
 var app = angular.module('petApp', ['ngRoute'])
 
