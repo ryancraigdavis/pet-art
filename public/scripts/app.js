@@ -29,7 +29,7 @@ var app = angular.module('petApp', ['ngRoute'])
 		$routeProvider
 		.when('/', {
 			templateUrl: "homeView.html",
-			controller:  "mainCtrl"
+			controller:  "mainCtrl",
 		})
 		.when('/artists', {
 			templateUrl: 'artists.html',
